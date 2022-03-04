@@ -44,7 +44,7 @@ function Example() {
   const handleEdit=(id)=>{
     var item =JSON.parse(localStorage.getItem("data"));
     var obj =item[id]
-    setedit({
+    setuser({
       name:obj.name,
       email:obj.email,
       phone:obj.phone
@@ -63,7 +63,7 @@ function Example() {
           <input
             type="text"
             name="name"
-            value={data.name}
+            value={user.name}
             onChange={handleChange}
             placeholder="Enter User Name"
           />
@@ -73,7 +73,7 @@ function Example() {
           <input
             type="text"
             name="email"
-            value={data.email}
+            value={user.email}
             onChange={handleChange}
             placeholder="Enter Email Id"
           />
@@ -83,7 +83,7 @@ function Example() {
           <input
             type="text"
             name="phone"
-            value={data.phone}
+            value={user.phone}
             onChange={handleChange}
             placeholder="Enter Phone Number"
           />
@@ -93,7 +93,7 @@ function Example() {
           <input 
           type="text"
           name="phone"
-          value={data.code}
+          value={user.code}
           onChange={handleChange}
           placeholder="Enter your Code"
           />
