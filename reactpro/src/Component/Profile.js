@@ -5,7 +5,7 @@ import "./From.css";
 function Example() {
   const [user, setuser] = useState({});
   const [data, setdata] = useState([]);
-  const [edit,setedit]= useState({});
+  
   
   useEffect(() => {
     const items = JSON.parse(localStorage.getItem("data"));

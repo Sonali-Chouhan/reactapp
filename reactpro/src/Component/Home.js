@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-// import Button from "react-bootstrap/Button";
-// import "bootstrap/dist/css/bootstrap.min.css";
+
 import "./From.css";
 function Example() {
   const [data, setdata] = useState([]);
@@ -26,6 +25,12 @@ function Example() {
       phone: user.phone,
     });
     setdata(data);
+    setuser({
+      ...user,
+      name: '',
+      email: '',
+      phone: '',
+    });
   };
   return (
     <div className="formDiv">
