@@ -50,11 +50,10 @@ function Example() {
       phone:obj.phone
     })
     console.log("999",obj)
-    debugger
-   
-//  setdata(obj)
+  
    }
   return (
+    <div>
     <div className="formDiv">
       <h1>Regitration From</h1>
       <form onSubmit={handleSubmit}>
@@ -100,6 +99,7 @@ function Example() {
         </div>
         <input type="submit" value="Submit" />
       </form>
+      </div>
       <table border="1">
         <thead className="thead-dark">
           <tr>

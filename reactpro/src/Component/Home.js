@@ -33,6 +33,7 @@ function Example() {
     });
   };
   return (
+    <div>
     <div className="formDiv">
       <h1>Regitration From</h1>
       
@@ -69,6 +70,7 @@ function Example() {
         </div>
         <input type="submit" value="Submit" />
       </form>
+      </div>
       <table border="1">
         <thead className="thead-dark">
           <tr>
@@ -91,7 +93,8 @@ function Example() {
           })}
         </tbody>
       </table>
-    </div>
+      </div>
+   
   );
 }
 export default Example;
