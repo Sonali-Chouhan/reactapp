@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import About from "./Component/About";
 import Data from "./Component/Data";
 import CheckStatus from "./Component/CheckStatus";
+import Accor from "./Component/Accor";
 function App() {
   useLayoutEffect(() => {
    console.log("data")
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="App">
        <CheckStatus/>
+       <Accor/>
         {/* <Status/> */}
      {/* <Home/>  */}
      {/* <Profile/>  */}

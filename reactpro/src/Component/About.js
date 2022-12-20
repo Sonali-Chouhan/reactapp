@@ -13,7 +13,6 @@ const About = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-
     data.push(state);
     setdata(data);
     setstate({
